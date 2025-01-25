@@ -19,13 +19,3 @@ Dupa aceea rulam comanda : node server.js pentru a porni serverul de care avem n
 ![image](https://github.com/user-attachments/assets/443edccf-fa82-4648-8d08-08400140ab99)
 
 Apoi deschidem fisierul index.html si putem folosi site-ul. Formularele salvate vor fi introduse intr-un fisier submissions.json.
-
-
-
-Bibliografia folosita:
-
-https://www.geeksforgeeks.org/build-a-weather-app-in-html-css-javascript/ - Pentru API-ul de vreme
-
-https://getbootstrap.com - Pentru Bootstrap
-
-https://nodejs.org/en - Pentru NodeJS
