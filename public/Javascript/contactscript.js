@@ -11,8 +11,8 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
         return;
     }
 
-    // Send data to the server
-    fetch('http://localhost:3000/submit-form', {
+    // Acum facem request la calea relativă
+    fetch('/api/submit-form', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

@@ -6,7 +6,7 @@ const weatherInfo = document.getElementById('weather-data');
                 const data = await response.json();
 
                 const { temperature, weathercode } = data.current_weather;
-                weatherInfo.textContent = `The current temperature in Brasov is ${temperature}°C with weather code ${weathercode}.`;
+                weatherInfo.textContent = `The current temperature in Brasov is ${temperature}°C.`;
             } catch (error) {
                 weatherInfo.textContent = 'Failed to load weather data. Please try again later.';
             }

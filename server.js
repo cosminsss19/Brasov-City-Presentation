@@ -1,18 +1,15 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const cors = require('cors');
 const app = express();
 
-// Middleware
+// Middleware pentru parsarea JSON
 app.use(express.json());
-app.use(cors());
 
-// Serve static files from the root directory
-app.use(express.static('./'));
+// Folosim path.join pentru a specifica calea absolută către folderul public
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Handle form submissions
-app.post('/submit-form', (req, res) => {
+app.post('/api/submit-form', (req, res) => {
     const submission = {
         timestamp: new Date().toISOString(),
         ...req.body
