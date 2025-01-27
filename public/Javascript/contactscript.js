@@ -11,7 +11,6 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
         return;
     }
 
-    // Acum facem request la calea relativă
     fetch('/api/submit-form', {
         method: 'POST',
         headers: {
