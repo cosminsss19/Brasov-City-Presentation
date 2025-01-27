@@ -25,3 +25,5 @@ pids
 .DS_Store
 .idea/
 .vscode/
+
+*.json
