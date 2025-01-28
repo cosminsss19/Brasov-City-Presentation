@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test.describe('E2E Tests', () => {
-    test('Complete user journey', async ({ page }) => {
+    test('Complete website test', async ({ page }) => {
         // Start from homepage
         await page.goto('/');
         

@@ -9,9 +9,8 @@ app.use(express.json());
 // Folosim path.join pentru a specifica calea absolută către folderul public
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.post('/api/submit-form', (req, res) => {
+app.post('/submit-form', (req, res) => {
     const submission = {
-        timestamp: new Date().toISOString(),
         ...req.body
     };
 

@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
 
-test.describe('API Integration Tests', () => {
+test.describe('Integration Tests', () => {
     test('Submit contact form successfully', async ({ request }) => {
-        const response = await request.post('/api/submit-form', {
+        const response = await request.post('/submit-form', {
             data: {
                 name: 'Test User',
                 email: 'test@example.com',

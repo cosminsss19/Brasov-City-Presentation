@@ -11,7 +11,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
         return;
     }
 
-    fetch('/api/submit-form', {
+    fetch('/submit-form', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
